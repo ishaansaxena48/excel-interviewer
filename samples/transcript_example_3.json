@@ -1,0 +1,36 @@
+{
+  "candidate": "Carol HandsOn",
+  "started_at": "2025-09-15T12:00:00Z",
+  "finished_at": "2025-09-15T12:20:00Z",
+  "responses": {
+    "q1": "=SUMIFS(B:B, A:A, \"Sales\")",
+    "q2": "=XLOOKUP(C2,A:A,B:B)",
+    "q3": "=COUNTIF(D2:D100,\"*\")",
+    "q4": "=AVERAGE(E:E)",
+    "q5": "=YEAR(F2)",
+    "q6": "Dividing by zero or blank denominator",
+    "q7": "Some cells formatted as text with trailing spaces",
+    "q8": "Absolute reference uses $; relative does not",
+    "q9": "XLOOKUP handles left lookup and defaults",
+    "q10": "I uploaded a CSV; monthly grouping shows 12 months"
+  },
+  "scores": {
+    "q1": 1.0,
+    "q2": 1.0,
+    "q3": 1.0,
+    "q4": 1.0,
+    "q5": 1.0,
+    "q6": 1.0,
+    "q7": 1.0,
+    "q8": 1.0,
+    "q9": 1.0,
+    "q10": 1.0
+  },
+  "notes": {
+    "q10": ["Pivot OK — found 12 months; sample total for first month: 1234.5"]
+  },
+  "overall": 100.0,
+  "strengths": ["Hands-on validation succeeded; monthly totals computed."],
+  "weaknesses": [],
+  "review_queue": []
+}

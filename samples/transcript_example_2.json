@@ -1,0 +1,50 @@
+{
+  "candidate": "Bob Mixed",
+  "started_at": "2025-09-15T11:00:00Z",
+  "finished_at": "2025-09-15T11:25:00Z",
+  "responses": {
+    "q1": "=SUMIF(B:B,A:A=\"Sales\")",
+    "q2": "=VLOOKUP(C2, A:B, 2, FALSE)",
+    "q3": "count text in D",
+    "q4": "=AVERAGEIFS(E:E, E:E, \"<>\")",
+    "q5": "Use YEAR function on the date",
+    "q6": "When denominator is zero",
+    "q7": "Maybe formatted as text",
+    "q8": "Absolute locks the cell, relative moves",
+    "q9": "VLOOKUP but XLOOKUP is better",
+    "q10": "Make a pivot and then chart it"
+  },
+  "scores": {
+    "q1": 0.9,
+    "q2": 0.0,
+    "q3": 0.0,
+    "q4": 1.0,
+    "q5": 1.0,
+    "q6": 0.5,
+    "q7": 0.33,
+    "q8": 1.0,
+    "q9": 0.5,
+    "q10": 0.75
+  },
+  "notes": {
+    "q1": ["Uses SUMIF (acceptable)"],
+    "q2": ["XLOOKUP / INDEX+MATCH not detected"],
+    "q3": ["COUNTIF/COUNTA not detected"],
+    "q4": ["Uses AVERAGE/AverageIf"],
+    "q5": ["Uses YEAR()"],
+    "q6": ["matched 1 causes"],
+    "q7": ["matched 1 possible reasons"],
+    "q8": ["Explains absolute vs relative"],
+    "q9": ["Does not mention differences"],
+    "q10": ["matched 3 chart/pivot keywords"]
+  },
+  "overall": 64.4,
+  "strengths": ["Write a formula to calculate the average of numbers in column E, ignoring blanks.", "Write a formula that extracts the year from a date in cell F2.", "Explain difference between Absolute ($A$1) and Relative (A1) references in formulas."],
+  "weaknesses": [
+    ["Give a formula to lookup value in C2 from a table where key is in column A, robust to column re-ordering.", "Consider using XLOOKUP or INDEX/MATCH which handle column re-ordering and provide clearer syntax."]
+  ],
+  "review_queue": [
+    {"question": "Write an Excel formula to count how many cells in range D2:D100 contain text.", "answer": "count text in D", "notes": ["COUNTIF/COUNTA not detected"]},
+    {"question": "Give a formula to lookup value in C2 from a table where key is in column A, robust to column re-ordering.", "answer": "=VLOOKUP(C2, A:B, 2, FALSE)", "notes": ["XLOOKUP / INDEX+MATCH not detected"]}
+  ]
+}

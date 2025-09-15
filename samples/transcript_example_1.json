@@ -1,0 +1,45 @@
+{
+  "candidate": "Alice Example",
+  "started_at": "2025-09-15T10:00:00Z",
+  "finished_at": "2025-09-15T10:12:00Z",
+  "responses": {
+    "q1": "=SUMIFS(B:B, A:A, \"Sales\")",
+    "q2": "=XLOOKUP(C2, A:A, B:B)",
+    "q3": "=COUNTIF(D2:D100, \"*\")",
+    "q4": "=AVERAGE(E:E)",
+    "q5": "=YEAR(F2)",
+    "q6": "You get #DIV/0! when dividing by zero or when the denominator is blank",
+    "q7": "Probably cells formatted as text or hidden spaces",
+    "q8": "Absolute $A$1 stays fixed; relative A1 moves when copied",
+    "q9": "XLOOKUP is more flexible; VLOOKUP needs a column index and can't look left",
+    "q10": "Insert a line chart with Month grouped from Date as X and sum of Sales as Y"
+  },
+  "scores": {
+    "q1": 1.0,
+    "q2": 1.0,
+    "q3": 1.0,
+    "q4": 1.0,
+    "q5": 1.0,
+    "q6": 1.0,
+    "q7": 1.0,
+    "q8": 1.0,
+    "q9": 1.0,
+    "q10": 1.0
+  },
+  "notes": {
+    "q1": ["Uses SUMIFS"],
+    "q2": ["Uses XLOOKUP / INDEX+MATCH"],
+    "q3": ["Uses COUNTIF/COUNTA"],
+    "q4": ["Uses AVERAGE/AverageIf"],
+    "q5": ["Uses YEAR()"],
+    "q6": ["matched 2 causes"],
+    "q7": ["matched 3 reasons"],
+    "q8": ["Explains absolute vs relative"],
+    "q9": ["Mentions key differences"],
+    "q10": ["matched 4 chart/pivot keywords"]
+  },
+  "overall": 100.0,
+  "strengths": ["Write an Excel formula that returns the SUM of column B only for rows where column A equals 'Sales'.", "Give a formula to lookup value in C2 from a table where key is in column A, robust to column re-ordering.", "Write an Excel formula to count how many cells in range D2:D100 contain text.", "Write a formula to calculate the average of numbers in column E, ignoring blanks.", "Write a formula that extracts the year from a date in cell F2.", "You get #DIV/0! error in Excel. What are two common causes?", "Your SUM formula =SUM(A1:A10) is returning 0 even though numbers are visible. List likely causes.", "Explain difference between Absolute ($A$1) and Relative (A1) references in formulas.", "Explain difference between VLOOKUP and XLOOKUP in Excel.", "Upload a CSV/XLSX with Date and Sales columns. How would you create a chart to show monthly sales trend?"],
+  "weaknesses": [],
+  "review_queue": []
+}
